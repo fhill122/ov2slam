@@ -244,7 +244,7 @@ public:
         header.stamp = ros::Time(time);
 
         pcloud->header = pcl_conversions::toPCL(header);
-        pub_point_cloud_.publish(pcloud);
+        pub_point_cloud_.publish(*pcloud);
     }
 
     void addKFsTraj(const Sophus::SE3d &Twc)

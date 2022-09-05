@@ -29,7 +29,8 @@ set(CMAKE_BUILD_TYPE "Release")
 # If you experience exceptions you can either re-compile
 # opengv and ov2slam without -march=native or re-compile
 # ceres with it
-set(CMAKE_CXX_FLAGS_RELEASE "-O3 -Wall -march=native -g")
+#set(CMAKE_CXX_FLAGS_RELEASE "-O3 -Wall -march=native -g")
+set(CMAKE_CXX_FLAGS_RELEASE "-O3 -Wall -g")
 
 
 if(WITH_OPENCV_CONTRIB)
